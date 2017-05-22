@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>IP Tester</title>
+  <style type="text/css">
+#user {
+	display: none;
+}
+  </style>
+
+
+  <!-- START: Here's the IP stuff -->
+  
+  
+</head>
+<body>
+<div id="user">
+    <ul>
+        <li><a href="#" title="Login">Login</a></li>
+    </ul>
+</div>
+
+
+
+<script type="application/javascript">
+  function getIP(json) {
+
+  	  	if (json.ip >= "67.207.117.225" && json.ip <= "67.207.117.254" || json.ip >= "50.247.120.73" && json.ip <= "50.247.120.77" || json.ip >= "24.43.117.153" && json.ip <= "24.43.117.154" ) {
+    document.getElementById('company-login').style.display = 'block';
+} else {
+	    document.getElementById('company-login').style.display = 'none';
+
+}
+  }
+  </script>
+  <script type="application/javascript" 
+          src="http://api.ipify.org?format=jsonp&callback=getIP">
+  </script>
+  <!-- END: IP Stuff -->
+
+
+
+</body>
+</html>
+
